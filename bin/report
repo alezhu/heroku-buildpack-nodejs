@@ -6,7 +6,7 @@
 set -o errexit    # always exit on error
 set -o pipefail   # don't ignore exit codes when piping output
 
-BUILD_DIR=${1:-}
+BUILD_DIR=${1:-}/public
 CACHE_DIR=${2:-}
 BP_DIR=$(cd "$(dirname "${0:-}")"; cd ..; pwd)
 
